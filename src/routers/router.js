@@ -5,6 +5,8 @@ import Product from "../screens/Products/Product";
 import LoginForm from "../screens/Forms/LoginForm";
 import LandingPage from "../screens/LandingPage/LandingPage";
 import App from "../App";
+const basename = process.env.NODE_ENV === 'production' ? '/modulo7-practica02' : '/';
+
 const routes = createBrowserRouter([
   {
     path: "/",
