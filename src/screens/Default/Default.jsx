@@ -11,7 +11,7 @@ const Default = () => {
         <OpenLink title="Learn React" url="https://react.dev/" />
         <OpenLink
           title="Mi proyecto react (Github)"
-          url="https://github.com/Oscar-Saravia"
+          url="https://github.com/Oscar-Saravia/modulo7-practica02.git"
         />
       </header>
     </>

@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Modulo VII **- DESARROLLO EN REACT V5**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**DOCENTE**: William Barra
 
-## Available Scripts
+**PARTICIPANTE**: Oscar Ramiro Saravia Veizaga
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Objetivo:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Mostrar el manejo de la Librería React en base al manejo de Componentes, manejo de estados, Hooks custom hooks, etc para la creación de aplicaciones web.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Requerimientos:
 
-### `npm test`
+- Solo deberá loguearse a la aplicación cuando:
+    ```
+    USER: Cualquier valor
+    EMAIL: un email válido cualquiera
+    PASSWORD: 
+    ```
+    El valor del password debe estar guardado en una variable de estado en REDUX. Dentro del reducer formReducer. Si el password es distinto de mod7ReactUSIP, en redux no se debe guardar ningún valor (user, email y password).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Mostrando el username y email en el navbar:
+    ```
+    USER: Cualquier valor
+    EMAIL: un email válido cualquiera
+    PASSWORD: mod7ReactUSIP
+    ```
+    Si el usuario coloca ese password se deben de guardar todos los datos en REDUX, dentro de la variable de estado formData.
 
-### `npm run build`
+- Agregar al campo password la posibilidad de ver como texto
+    Inicialmente el campo del password es de tipo password. Pero es necesario convertirlo a modo text si el usuario desea ver su password.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Logout de la aplicación:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Al lado del botón Submit agregar un link: Logout
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Cuando se presiona en este LINK se levantará un modal
+    Y el modal deberá mostrar lo siguiente: Un texto mas un botón al lado del texto
 
-### `npm run eject`
+    Si se presiona X, no se hace nada y el modal ya no se muestra.
+    Sin embargo sí se presiona en el botón Presiona para salir, los valores guardados en redux(formData) son eliminados. Deberían estar todos en vacío.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Limpiando los datos del formulario:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Después de resolver el anterior ejercicio
+    Al hook useForm agregar un método que permite limpiar todos los datos, es decir inicializar todos los valores con datos vacíos.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Cuando se presiona el modal del logout, todos los datos del formulario deberá quedar vacíos.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Agregando LandingPage
 
-## Learn More
+    Crear un nuevo Screen de nombre LandingPage.
+    Esta página se muestra por defecto cuando se carga la aplicación.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Después de resolver los ejercicios, subir estos cambios a GitHub.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    A. Se revisará la lógica a través del código.
 
-### Code Splitting
+    B. Se revisará la funcionalidad en github pages.
+# modulo7-practica02
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Instalar las dependencias:
+```
+npm install
+```
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Levantar el servidor: 
+```
+npm start
+```
